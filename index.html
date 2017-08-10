@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project 2</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Roboto+Condensed|Roboto+Condensed:700" rel="stylesheet">
+    
+    <!--override css-->
+    <link href="css/p2.css" rel="stylesheet" type="text/css">
+    
+    <!--Video plugin from http://wp-time.com/youtube-popup-jquery-plugin/-->
+    <link rel="stylesheet" type="text/css" href="css/YouTubePopUp.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand, logo" href="index.html"><img src="images/logo.png"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#highlights">Highlights</a>
+                    </li>
+                    <li>
+                        <a href="#gadgets">Gadgets</a>
+                    </li>
+                    <li>
+                        <a href="#science">Science</a>
+                    </li>
+                    <li>
+                        <a href="#deals">Deals</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reviews <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#laptops">Laptops</a>
+                            </li>
+                            <li>
+                                <a href="#tablets">Tablets</a>
+                            </li>
+                            <li>
+                                <a href="#phones">Phones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">How-To<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#repair">Repair</a>
+                            </li>
+                            <li>
+                                <a href="#install">Install</a>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/uber-self-driving-car.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2><a target="_blank" class="link" href="http://inhabitat.com/uber-launches-self-driving-cars-in-pittsburgh/">Uber Launches Self-Driving Cars In Pittsburgh</a></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/fly.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2><a target="_blank" class="link" href="https://www.engadget.com/2016/09/16/scientists-pickle-and-map-a-flys-brain-for-the-first-time/">Scientists Map A Fly Brain For The First Time</a></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/iphone-7.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2><a target="_blank" class="link" href="http://www.pcmag.com/news/347916/the-iphone-7-is-the-fastest-phone-ever">Benchmark Shows A10 Is The Fastest Chip Ever Put In A Phone</a></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Most Trending -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header heading"><i class="fa fa-fw fa-th-large"></i>Most Trending</h1>
+            </div>
+           <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Mobile</h4>
+                    </div>
+                    <div class="panel-body rubric">
+                        <a target="_blank" href="https://www.engadget.com/2016/09/20/comcast-wireless-2017/"><img alt="" class="img-responsive" src="images/Comcast_Truck.jpg"/></a>
+                        
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="http://www.wsj.com/articles/comcast-to-launch-wireless-service-by-mid-2017-1474378548">Comcast confirms its plan on entering the wireless market some time next year to compete against Verizon, AT&amp;T, T-Mobil, and Sprint.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 20, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Science</h4>
+                    </div>
+                    <div class="panel-body rubric">
+                        <a target="_blank" href="https://www.engadget.com/2016/09/19/gamers-beat-scientists-to-protein-discovery/"><img alt="" class="img-responsive" src="images/Foldit.jpg"/></a>
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="https://www.engadget.com/2016/09/19/gamers-beat-scientists-to-protein-discovery/">What happens when you put 469 gamers into crowdsourced research? You make faster discoveries than the scientific community can.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 19, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Cars</h4>
+                    </div>
+                   <div class="panel-body rubric">
+                       <a target="_blank" href="http://fortune.com/2016/09/20/chevy-bolt-price/"><img alt="" class="img-responsive" src="images/chevy-bolt-ev-2017.jpg"/></a>
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="http://fortune.com/2016/09/20/chevy-bolt-price/">Will the Chevy Bolt Ev be more successful than the Tesla Model 3? EPA has estimated it to have a 238 mile range per charge, 10% higher than the Model 3.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 20, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <h1 class="page-header heading"><i class="fa fa-fw fa-play-circle"></i>Discover</h1>
+            </div>
+            
+            <!--Discover-->
+            <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Drones</h4>
+                    </div>
+                    <div class="panel-body rubric">
+                       <a  class="bla-1" href="https://youtu.be/N1C6QRodsc8?rel=0;showinfo=0;autoplay=1;"><img class="img-responsive" src="images/gopro-karma-drone.jpg"/></a>
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="https://www.wired.com/2016/09/gopros-karma-drone-new-cameras-look-mighty-hot/">GoPro introduces Karma, the most advanced recreational drone on the market -- at least to them.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 20, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Manufacturing</h4>
+                    </div>
+                    <div class="panel-body rubric">
+                        <a  class="bla-1" href="https://youtu.be/D5ziiX_235Q?rel=0;showinfo=0;autoplay=1;"><img class="img-responsive" src="images/wazer-desktop-waterjet-cutter.jpg"/></a>
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="https://www.kickstarter.com/projects/1294137530/the-first-desktop-waterjet-cutter?ref=nav_search"> Did you know water can cut any material with very fine precision? Wazer is the first desktop waterjet ever invented.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 21, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default case">
+                    <div class="panel-heading">
+                        <h4>#Accessories</h4>
+                    </div>
+                   <div class="panel-body rubric">
+                        <a  class="bla-1" href="https://youtu.be/k_MDwdImc7Q?rel=0;showinfo=0;autoplay=1;"><img class="img-responsive" src="images/Megaverse-iphone-case.jpg"/></a>
+                        <div class="content-caption">
+                            <a target="_blank" class="active caption" href="https://www.indiegogo.com/projects/megaverse-the-first-modular-anti-gravity-case#/">Meet Megaverse, an iphone case with a self-healing adhesive that let you take hand-free selfies on the go.</a>
+                        </div>
+                        <div class="status">
+                            <span style="color:#4c83ac; margin:10px">September 21, 2016 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- /.row -->
+
+       
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <!--Upcoming Show-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Upcoming Show</h2>
+            </div>
+            <div class="col-md-6">
+                <strong>Press Release</strong>
+                <p>Registration Opens Today for CES 2017<br><span style="color:#4c83ac">Arlington, VA -- September 06, 2016</span></P>
+                <p>Registration opens today for CES® 2017 where the global stage for innovation will celebrate its 50th anniversary. For 50 years CES has been the proving ground for innovators, unveiling breakthrough technologies and adapting as the definition of technology expands. Each year, products are introduced that challenge the status quo and raise the bar for future advancements. CES 2017 will feature more than 3,800 exhibiting companies showcasing innovation across 2.4 million net square feet, representing 24 product categories.</p>
+                <br>
+                <p> For general attendees, registration is $100 through December 20 and will increase to $300 on December 21. Registration for approved and credentialed media is always free. More than 25 locations throughout Las Vegas are designated for badge pickup, including key locations at McCarran International Airport, official show hotels and exhibit venues.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <a target="_blank" href="http://www.ces.tech/News/Press-Releases/CES-Press-Release.aspx?NodeID=3f70a069-74b8-4af9-8a92-6eff22ff7a96"><img class="img-responsive" src="images/CES_Logo.jpg" alt=""></a> 
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Add To Calendar -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p><strong>When:</strong> The show will run Thursday, January 5 through Sunday, January 8 in Las Vegas, NV. Media events kick off at Noon, Tuesday, January 3 at Mandalay Bay.</p>
+                </div>
+                <div class="col-md-4">
+                    <a target="_blank" class="btn btn-lg btn-default btn-block" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=dHFzN2s1Mm4zZmdoa3QwdW1mcTNycDU1dmMgZ29kamkyMDA4QG0&tmsrc=godji2008%40gmail.com">Add To Calendar</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Godson Fortil 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+     <!--This video plugin is from Qassim Hassan on github and licensed by the MIT-->
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/YouTubePopUp.jquery.js"></script>
+    <script type="text/javascript">
+      jQuery(function(){
+          jQuery("a.bla-1").YouTubePopUp();
+          jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+      });
+    </script>
+    <!--END OF PLUGIN-->
+
+</body>
+
+</html>

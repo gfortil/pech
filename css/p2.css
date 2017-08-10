@@ -1,0 +1,31 @@
+h1.heading{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+a.link{
+    color: white;
+}
+.content-caption{
+    
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a.caption{
+    color:#4b4b4b;
+}
+.status{
+    margin-bottom: 10px;
+}
+
+.rubric{
+    
+   padding:0;
+    
+}
+.case{
+    border-left-width: 0;
+    border-right-width: 0;
+}  
